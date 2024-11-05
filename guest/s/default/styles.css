@@ -1,0 +1,75 @@
+/* General container styling */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0 5px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Action and response box styling */
+#actionBox, #responseBox {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* For better visibility on mobile devices */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

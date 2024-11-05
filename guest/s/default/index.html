@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Test Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Enter your session details and click "Get Online" to connect:</p>
+        
+        <label for="upLimit">Up Limit (optional):</label>
+        <input type="number" id="upLimit" placeholder="Upload limit (kbps)">
+        
+        <label for="downLimit">Down Limit (optional):</label>
+        <input type="number" id="downLimit" placeholder="Download limit (kbps)">
+        
+        <label for="bytesLimit">Bytes Limit (optional):</label>
+        <input type="number" id="bytesLimit" placeholder="Data limit (MB)">
+        
+        <label for="minutesLimit">Session Duration (minutes):</label>
+        <input type="number" id="minutesLimit" placeholder="Session duration in minutes" required>
+        
+        <button id="getOnlineBtn">Get Online</button>
+        
+        <div id="actionBox">
+            <!-- Message after clicking "Get Online" will appear here -->
+        </div>
+
+        <h2>URL Parameters</h2>
+        <div id="responseBox">
+            <!-- URL parameters will be displayed here for reference -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
